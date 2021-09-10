@@ -149,7 +149,7 @@ function modifySettings(
 
     console.log(chalk.yellow(reply));
     return reply;
-  } catch (error) {
+  } catch (error: any) {
     console.error(chalk.bgRed(`* error: ${error}`));
     return error;
   }
